@@ -1,0 +1,51 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"ado19_ci506"},
+{"type":"table","name":"Developer","database":"ado19_ci506","data":
+[
+{"DeveloperID":"FromSoftware","PublisherID":"Bandi Namco"},
+{"DeveloperID":"Mojang","PublisherID":"Microsoft"}
+]
+}
+,{"type":"table","name":"Game","database":"ado19_ci506","data":
+[
+{"GameID":"1","DeveloperID":"FromSoftware","PublisherID":"Bandi Namco","Price":"39.99","GameImage":"https:\/\/ibb.co\/p0PcbHP"},
+{"GameID":"2","DeveloperID":"Mojang","PublisherID":"Microsoft","Price":"14.99","GameImage":"https:\/\/ibb.co\/z2vYXv9"}
+]
+}
+,{"type":"table","name":"library","database":"ado19_ci506","data":
+[
+{"libraryID":"1","UserID":"1","GameID":"1","PurchaseDate":"2024-05-30 10:00:00","PurchaseID":"1"},
+{"libraryID":"2","UserID":"1","GameID":"2","PurchaseDate":"2024-05-30 10:43:00","PurchaseID":"4"},
+{"libraryID":"3","UserID":"2","GameID":"2","PurchaseDate":"2024-05-29 15:30:00","PurchaseID":"2"},
+{"libraryID":"4","UserID":"3","GameID":"1","PurchaseDate":"2024-05-28 12:45:00","PurchaseID":"3"}
+]
+}
+,{"type":"table","name":"Publisher","database":"ado19_ci506","data":
+[
+{"PublisherID":"Bandi Namco","DeveloperID":"FromSoftware"},
+{"PublisherID":"Microsoft","DeveloperID":"Mojang"}
+]
+}
+,{"type":"table","name":"Purchase","database":"ado19_ci506","data":
+[
+{"PurchaseID":"1","PurchaseDate":"2024-05-30 10:00:00","ProductType":"Game","PublisherID":"Bandai Namco"},
+{"PurchaseID":"2","PurchaseDate":"2024-05-29 15:30:00","ProductType":"Game","PublisherID":"Microsoft"},
+{"PurchaseID":"3","PurchaseDate":"2024-05-28 12:45:00","ProductType":"Game","PublisherID":"Bandai Namco"}
+]
+}
+,{"type":"table","name":"Transaction","database":"ado19_ci506","data":
+[
+{"TransactionID":"1","PurchaseID":"1","PurchaseDate":"2024-05-30 10:00:00","UserID":"1","DeveloperID":"FromSoftware","PublisherID":"Bandai Namco","AccountNumber":"12345678","billingAddress":"123 Main St"},
+{"TransactionID":"2","PurchaseID":"2","PurchaseDate":"2024-05-29 15:30:00","UserID":"2","DeveloperID":"Mojang","PublisherID":"Microsoft","AccountNumber":"23456789","billingAddress":"456 Elm St"},
+{"TransactionID":"3","PurchaseID":"3","PurchaseDate":"2024-05-28 12:45:00","UserID":"3","DeveloperID":"FromSoftware","PublisherID":"Bandai Namco","AccountNumber":"34567890","billingAddress":"789 Oak St"}
+]
+}
+,{"type":"table","name":"User","database":"ado19_ci506","data":
+[
+{"userID":"1","username":"oro","password":"vevee6g5ge","email":"oro1@example.com","billingAddress":"123 Main St","sortcode":"123456","accountNumber":"12345678","libraryID":"1"},
+{"userID":"2","username":"user2","password":"hrwhre876gw","email":"bo2@example.com","billingAddress":"456 Elm St","sortcode":"234567","accountNumber":"23456789","libraryID":"2"},
+{"userID":"3","username":"user3","password":"hghrergw65757","email":"dave3@example.com","billingAddress":"789 Oak St","sortcode":"345678","accountNumber":"34567890","libraryID":"3"}
+]
+}
+]
